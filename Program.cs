@@ -1,5 +1,4 @@
 ﻿
-
 Console.Clear();
 
 string? playAgain = "yes";
