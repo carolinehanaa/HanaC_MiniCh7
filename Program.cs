@@ -6,27 +6,19 @@ while (playAgain == "yes")
 {
 
     string? input;
-    int num;
 
-    Console.WriteLine("Enter a number to reverse:");
+    Console.WriteLine("Enter anything to reverse it:");
     input = Console.ReadLine();
 
-    bool validNum = Int32.TryParse(input, out num);
 
     char[] reverseArray = input.ToCharArray();
 
     Array.Reverse(reverseArray);
 
     string revInput = new string(reverseArray);
-   if(!validNum)
-   {
-      Console.WriteLine("Invalid Number");
-      playAgain = "yes";
-   }else
-   {
+ 
     Console.WriteLine(revInput);
-   }
-
+   
     string? answer = "";
     while (answer != "yes" && answer != "no")
     {
